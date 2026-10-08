@@ -48,5 +48,5 @@ app.*.map.json
 .widget_preview/
 
 # Local assignment submission artifacts
-YourName_CalculatorApp.apk
-YourName_Implementation.docx
+*_CalculatorApp.apk
+*_Implementation.docx

@@ -765,12 +765,16 @@ class _ButtonGrid extends StatelessWidget {
       [
         for (final digit in ['1', '2', '3'])
           _CalcButtonData(digit, onPressed: () => onDigit(digit)),
-        _CalcButtonData('=', onPressed: onEquals, type: _ButtonType.equals),
+        _CalcButtonData('.', onPressed: onDecimal),
       ],
       [
         _CalcButtonData('0', onPressed: () => onDigit('0'), flex: 2),
-        _CalcButtonData('.', onPressed: onDecimal),
-        _CalcButtonData('=', onPressed: onEquals, type: _ButtonType.equals),
+        _CalcButtonData(
+          '=',
+          onPressed: onEquals,
+          type: _ButtonType.equals,
+          flex: 2,
+        ),
       ],
     ];
 

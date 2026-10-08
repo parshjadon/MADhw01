@@ -20,6 +20,8 @@ void main() {
   testWidgets('adds two operands and shows the result', (tester) async {
     await tester.pumpWidget(const CalculatorApp());
 
+    expect(find.text('='), findsOneWidget);
+
     await tapButton(tester, '7');
     await tapButton(tester, '+');
     await tapButton(tester, '5');
